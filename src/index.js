@@ -12,7 +12,7 @@ for (let i=0; i<3; ++i) {
     condition[i].addEventListener("click", (e) => handleButtonClick(e, i))
 }
 
-for (let i=0; i<4; ++i) {
+for (let i=0; i<7; i+=2) {
     bitsA[i].addEventListener("change", (e) => evaluateBits(e));
     bitsB[i].addEventListener("change", (e) => evaluateBits(e));
 }
@@ -22,35 +22,35 @@ function evaluateBits(e) {
         case "AND": {
             if (bitsA[0].checked && bitsB[0].checked) resultBits[0].checked = true;
             else resultBits[0].checked = false;
-            if (bitsA[1].checked && bitsB[1].checked) resultBits[1].checked = true;
-            else resultBits[1].checked = false;
             if (bitsA[2].checked && bitsB[2].checked) resultBits[2].checked = true;
             else resultBits[2].checked = false;
-            if (bitsA[3].checked && bitsB[3].checked) resultBits[3].checked = true;
-            else resultBits[3].checked = false;
+            if (bitsA[4].checked && bitsB[4].checked) resultBits[4].checked = true;
+            else resultBits[4].checked = false;
+            if (bitsA[6].checked && bitsB[6].checked) resultBits[6].checked = true;
+            else resultBits[6].checked = false;
             break;
         }
         case "OR": {
             if (bitsA[0].checked || bitsB[0].checked) resultBits[0].checked = true;
             else resultBits[0].checked = false;
-            if (bitsA[1].checked || bitsB[1].checked) resultBits[1].checked = true;
-            else resultBits[1].checked = false;
             if (bitsA[2].checked || bitsB[2].checked) resultBits[2].checked = true;
             else resultBits[2].checked = false;
-            if (bitsA[3].checked || bitsB[3].checked) resultBits[3].checked = true;
-            else resultBits[3].checked = false;
+            if (bitsA[4].checked || bitsB[4].checked) resultBits[4].checked = true;
+            else resultBits[4].checked = false;
+            if (bitsA[6].checked || bitsB[6].checked) resultBits[6].checked = true;
+            else resultBits[6].checked = false;
             break;
         }
 
         case "XOR": {
             if (bitsA[0].checked ^ bitsB[0].checked) resultBits[0].checked = true;
             else resultBits[0].checked = false;
-            if (bitsA[1].checked ^ bitsB[1].checked) resultBits[1].checked = true;
-            else resultBits[1].checked = false;
             if (bitsA[2].checked ^ bitsB[2].checked) resultBits[2].checked = true;
             else resultBits[2].checked = false;
-            if (bitsA[3].checked ^ bitsB[3].checked) resultBits[3].checked = true;
-            else resultBits[3].checked = false;
+            if (bitsA[4].checked ^ bitsB[4].checked) resultBits[4].checked = true;
+            else resultBits[4].checked = false;
+            if (bitsA[6].checked ^ bitsB[6].checked) resultBits[6].checked = true;
+            else resultBits[6].checked = false;
 
             break;
         }

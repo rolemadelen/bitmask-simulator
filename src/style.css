@@ -3,6 +3,9 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+
+    font-family: 'Courier New', Courier, monospace;
 }
 
 header {
@@ -10,11 +13,114 @@ header {
 }
 
 input[type="button"] {
-    border-radius: 10px;
-    background-color: rgb(228, 228, 228);
+    font-size: 14px;
+    border-radius: 50%;
+    background-color: transparent;
+    margin: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 3px 3px 0 rgba(254, 69, 81, 0.5);
+    transition: all 0.2s;
 }
 
-input.active {
-    background-color: rgb(36, 149, 255);
-    color: #c9c9c9;
+input[type="button"].active {
+    background-color: #27e476;
+    box-shadow: 0 3px 3px 0 rgba(72, 233, 138, 0.5);
+    color: rgba(255, 255, 255, 0.918);
+    transition: all 0.2s;
+}
+
+div.bits {
+    display: flex;
+    justify-content: center;
+}
+
+div.bits input {
+    display: none;
+}
+
+div.result {
+    border: 4px solid #9e9e9e;
+    margin-top: 10px;
+    padding: 10px 5px;
+    border-radius: 15px;
+}
+
+div.result>input,
+div.result>label,
+div.result>label>div {
+    cursor: default !important;
+}
+
+/* https://codepen.io/CodeMeNatalie/pen/qBENxOP?editors=0110 */
+
+.toggleWrapper {
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fe4551;
+    box-shadow: 0 5px 5px 0 rgba(254, 69, 81, 0.3);
+
+    margin: 5px;
+}
+
+div.result>.toggleWrapper {
+    background-color: #bdbdbd;
+}
+
+.toggleWrapper:active {
+    width: 55px;
+    height: 55px;
+    box-shadow: 0 3px 3px 0 rgba(254, 69, 81, 0.5);
+}
+
+.toggleWrapper:active .toggle {
+    height: 17px;
+    width: 17px;
+}
+
+.toggleWrapper .toggle {
+    transition: all 0.2s ease-in-out;
+    height: 15px;
+    width: 15px;
+    background-color: transparent;
+    border: 9px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: red 0.7s linear forwards;
+}
+
+.background {
+    position: absolute;
+    height: 60vh;
+    width: 60vw;
+    background-color: #fef5f4;
+}
+
+input:checked~.background {
+    background-color: #f9faf7;
+}
+
+input:checked+.toggleWrapper {
+    background-color: #48e98a;
+    box-shadow: 0 5px 5px 0 rgba(72, 233, 138, 0.3);
+}
+
+input:checked+.toggleWrapper:active {
+    box-shadow: 0 3px 3px 0 rgba(72, 233, 138, 0.5);
+}
+
+input:checked+.toggleWrapper .toggle {
+    width: 0;
+    background-color: #fff;
+    border-color: transparent;
+    border-radius: 30px;
+    animation: green 0.7s linear forwards !important;
 }
