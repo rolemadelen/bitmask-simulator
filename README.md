@@ -2,6 +2,8 @@
 
 Day 3: Bit Masks Simulator
 
+![Bitmasknig demo](bitmask.gif)
+
 ## Description
 Create a bit simulator for conditions (`AND`, `OR`, and `XOR`). 
 
