@@ -7,7 +7,9 @@ Day 3: Bit Masks Simulator
 ## Description
 Create a bit simulator for conditions (`AND`, `OR`, and `XOR`). 
 
-## Used
+## SPEC
+- HTML5
+- CSS
 - Vanilla JavaScript
 
 ## Reference
