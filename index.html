@@ -13,76 +13,83 @@
         <header>
             Bit Masks
         </header>
-        <div class="bits">
-            <input type="checkbox" name="bit11" id="toggle11"/>
-            <label for="toggle11" class="toggleWrapper">
-                <div class="toggle"></div>
-            </label>
+        <div class="bits_wrapper">
+            <div class="bits">
+                <input type="checkbox" name="bit11" id="toggle11" />
+                <label for="toggle11" class="toggleWrapper">
+                    <div class="toggle"></div>
+                </label>
 
-            <input type="checkbox" name="bit12" id="toggle12"/>
-            <label for="toggle12" class="toggleWrapper">
-                <div class="toggle"></div>
-            </label>
+                <input type="checkbox" name="bit12" id="toggle12" />
+                <label for="toggle12" class="toggleWrapper">
+                    <div class="toggle"></div>
+                </label>
 
-            <input type="checkbox" name="bit13" id="toggle13"/>
-            <label for="toggle13" class="toggleWrapper">
-                <div class="toggle"></div>
-            </label>
+                <input type="checkbox" name="bit13" id="toggle13" />
+                <label for="toggle13" class="toggleWrapper">
+                    <div class="toggle"></div>
+                </label>
 
-            <input type="checkbox" name="bit14" id="toggle14"/>
-            <label for="toggle14" class="toggleWrapper">
-                <div class="toggle"></div>
-            </label>
+                <input type="checkbox" name="bit14" id="toggle14" />
+                <label for="toggle14" class="toggleWrapper">
+                    <div class="toggle"></div>
+                </label>
+            </div>
+
+            <div id="condition">
+                <input type="button" value="AND" class="active" />
+                <input type="button" value="OR" />
+                <input type="button" value="XOR" />
+            </div>
+
+            <div class="bits">
+                <input type="checkbox" name="bit21" id="toggle21" />
+                <label for="toggle21" class="toggleWrapper">
+                    <div class="toggle"></div>
+                </label>
+
+                <input type="checkbox" name="bit22" id="toggle22" />
+                <label for="toggle22" class="toggleWrapper">
+                    <div class="toggle"></div>
+                </label>
+
+                <input type="checkbox" name="bit23" id="toggle23" />
+                <label for="toggle23" class="toggleWrapper">
+                    <div class="toggle"></div>
+                </label>
+
+                <input type="checkbox" name="bit24" id="toggle24" />
+                <label for="toggle24" class="toggleWrapper">
+                    <div class="toggle"></div>
+                </label>
+            </div>
+            <div class="result bits">
+                <input type="checkbox" name="result-bit1" id="toggle1" disabled />
+                <label for="toggle1" class="toggleWrapper">
+                    <div class="toggle"></div>
+                </label>
+
+                <input type="checkbox" name="result-bit2" id="toggle2" disabled />
+                <label for="toggle2" class="toggleWrapper">
+                    <div class="toggle"></div>
+                </label>
+
+                <input type="checkbox" name="result-bit3" id="toggle3" disabled />
+                <label for="toggle3" class="toggleWrapper">
+                    <div class="toggle"></div>
+                </label>
+
+                <input type="checkbox" name="result-bit4" id="toggle4" disabled />
+                <label for="toggle4" class="toggleWrapper">
+                    <div class="toggle"></div>
+                </label>
+            </div>
         </div>
-
-        <div id="condition">
-            <input type="button" value="AND" class="active" />
-            <input type="button" value="OR" />
-            <input type="button" value="XOR" />
-        </div>
-
-        <div class="bits">
-            <input type="checkbox" name="bit21" id="toggle21"/>
-            <label for="toggle21" class="toggleWrapper">
-                <div class="toggle"></div>
-            </label>
-
-            <input type="checkbox" name="bit22" id="toggle22"/>
-            <label for="toggle22" class="toggleWrapper">
-                <div class="toggle"></div>
-            </label>
-
-            <input type="checkbox" name="bit23" id="toggle23"/>
-            <label for="toggle23" class="toggleWrapper">
-                <div class="toggle"></div>
-            </label>
-
-            <input type="checkbox" name="bit24" id="toggle24"/>
-            <label for="toggle24" class="toggleWrapper">
-                <div class="toggle"></div>
-            </label>
-        </div>
-        <div class="result bits">
-            <input type="checkbox" name="result-bit1" id="toggle1" disabled/>
-            <label for="toggle1" class="toggleWrapper">
-                <div class="toggle"></div>
-            </label>
-
-            <input type="checkbox" name="result-bit2" id="toggle2" disabled/>
-            <label for="toggle2" class="toggleWrapper">
-                <div class="toggle"></div>
-            </label>
-
-            <input type="checkbox" name="result-bit3" id="toggle3" disabled/>
-            <label for="toggle3" class="toggleWrapper">
-                <div class="toggle"></div>
-            </label>
-
-            <input type="checkbox" name="result-bit4" id="toggle4" disabled/>
-            <label for="toggle4" class="toggleWrapper">
-                <div class="toggle"></div>
-            </label>
-        </div>
+    </div>
+    <div class="credit">
+        <ul>
+            <li>Button is designed by <a href="https://codepen.io/ItsMeNatalie/pen/qBENxOP?editors=0110">@Oleg Frolov</a></li>
+        </ul>
     </div>
 </body>
 <script src="./src/index.js"></script>
